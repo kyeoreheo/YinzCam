@@ -82,6 +82,54 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		316BC53B25ACF45100A77E55 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				31EA4B5F25ACE6B40097AA61 /* AppDelegate.swift */,
+				31EA4B6125ACE6B40097AA61 /* SceneDelegate.swift */,
+				31EA4B6325ACE6B40097AA61 /* SplashView.swift */,
+				31EA4B6825ACE6B50097AA61 /* Assets.xcassets */,
+				31EA4B6A25ACE6B50097AA61 /* LaunchScreen.storyboard */,
+				31EA4B6D25ACE6B50097AA61 /* Info.plist */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		316BC53C25ACF45A00A77E55 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		316BC53D25ACF46700A77E55 /* API */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		316BC53E25ACF47400A77E55 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		316BC53F25ACF47C00A77E55 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		316BC54025ACF48700A77E55 /* MainTab */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MainTab;
+			sourceTree = "<group>";
+		};
 		31EA4B5325ACE6B40097AA61 = {
 			isa = PBXGroup;
 			children = (
@@ -108,12 +156,12 @@
 		31EA4B5E25ACE6B40097AA61 /* YinzCam */ = {
 			isa = PBXGroup;
 			children = (
-				31EA4B5F25ACE6B40097AA61 /* AppDelegate.swift */,
-				31EA4B6125ACE6B40097AA61 /* SceneDelegate.swift */,
-				31EA4B6325ACE6B40097AA61 /* SplashView.swift */,
-				31EA4B6825ACE6B50097AA61 /* Assets.xcassets */,
-				31EA4B6A25ACE6B50097AA61 /* LaunchScreen.storyboard */,
-				31EA4B6D25ACE6B50097AA61 /* Info.plist */,
+				316BC53B25ACF45100A77E55 /* Application */,
+				316BC53C25ACF45A00A77E55 /* Extensions */,
+				316BC53D25ACF46700A77E55 /* API */,
+				316BC53E25ACF47400A77E55 /* Splash */,
+				316BC53F25ACF47C00A77E55 /* Authentication */,
+				316BC54025ACF48700A77E55 /* MainTab */,
 			);
 			path = YinzCam;
 			sourceTree = "<group>";
