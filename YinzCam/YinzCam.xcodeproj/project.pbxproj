@@ -3,14 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2781FC82C9A89BC3BA7A79A4 /* Pods_YinzCam.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F1D5D993DF733E886F59C92 /* Pods_YinzCam.framework */; };
 		31EA4B6025ACE6B40097AA61 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31EA4B5F25ACE6B40097AA61 /* AppDelegate.swift */; };
 		31EA4B6225ACE6B40097AA61 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31EA4B6125ACE6B40097AA61 /* SceneDelegate.swift */; };
-		31EA4B6425ACE6B40097AA61 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31EA4B6325ACE6B40097AA61 /* ViewController.swift */; };
-		31EA4B6725ACE6B40097AA61 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31EA4B6525ACE6B40097AA61 /* Main.storyboard */; };
+		31EA4B6425ACE6B40097AA61 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31EA4B6325ACE6B40097AA61 /* SplashView.swift */; };
 		31EA4B6925ACE6B50097AA61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31EA4B6825ACE6B50097AA61 /* Assets.xcassets */; };
 		31EA4B6C25ACE6B50097AA61 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31EA4B6A25ACE6B50097AA61 /* LaunchScreen.storyboard */; };
 		31EA4B7725ACE6B50097AA61 /* YinzCamTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31EA4B7625ACE6B50097AA61 /* YinzCamTests.swift */; };
@@ -35,11 +35,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0E5C26DC109734759B684701 /* Pods-YinzCam.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YinzCam.release.xcconfig"; path = "Target Support Files/Pods-YinzCam/Pods-YinzCam.release.xcconfig"; sourceTree = "<group>"; };
+		2F1D5D993DF733E886F59C92 /* Pods_YinzCam.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YinzCam.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		31EA4B5C25ACE6B40097AA61 /* YinzCam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YinzCam.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		31EA4B5F25ACE6B40097AA61 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		31EA4B6125ACE6B40097AA61 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		31EA4B6325ACE6B40097AA61 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		31EA4B6625ACE6B40097AA61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		31EA4B6325ACE6B40097AA61 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		31EA4B6825ACE6B50097AA61 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		31EA4B6B25ACE6B50097AA61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		31EA4B6D25ACE6B50097AA61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -52,6 +53,7 @@
 		31EA4B9625ACE7590097AA61 /* Maven Pro Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Maven Pro Bold.otf"; sourceTree = "<group>"; };
 		31EA4B9725ACE75A0097AA61 /* Maven Pro Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Maven Pro Regular.otf"; sourceTree = "<group>"; };
 		31EA4B9825ACE75A0097AA61 /* LeagueGothic-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LeagueGothic-Regular.otf"; sourceTree = "<group>"; };
+		F7AC86A57EE530E65CF23C70 /* Pods-YinzCam.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YinzCam.debug.xcconfig"; path = "Target Support Files/Pods-YinzCam/Pods-YinzCam.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2781FC82C9A89BC3BA7A79A4 /* Pods_YinzCam.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +90,8 @@
 				31EA4B7525ACE6B50097AA61 /* YinzCamTests */,
 				31EA4B8025ACE6B50097AA61 /* YinzCamUITests */,
 				31EA4B5D25ACE6B40097AA61 /* Products */,
+				BE46E19E8A7A238424E0C1E9 /* Pods */,
+				6E4D5FBB4E590CBEA4171C69 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,8 +110,7 @@
 			children = (
 				31EA4B5F25ACE6B40097AA61 /* AppDelegate.swift */,
 				31EA4B6125ACE6B40097AA61 /* SceneDelegate.swift */,
-				31EA4B6325ACE6B40097AA61 /* ViewController.swift */,
-				31EA4B6525ACE6B40097AA61 /* Main.storyboard */,
+				31EA4B6325ACE6B40097AA61 /* SplashView.swift */,
 				31EA4B6825ACE6B50097AA61 /* Assets.xcassets */,
 				31EA4B6A25ACE6B50097AA61 /* LaunchScreen.storyboard */,
 				31EA4B6D25ACE6B50097AA61 /* Info.plist */,
@@ -142,6 +146,23 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
+		6E4D5FBB4E590CBEA4171C69 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2F1D5D993DF733E886F59C92 /* Pods_YinzCam.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BE46E19E8A7A238424E0C1E9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F7AC86A57EE530E65CF23C70 /* Pods-YinzCam.debug.xcconfig */,
+				0E5C26DC109734759B684701 /* Pods-YinzCam.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -149,9 +170,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 31EA4B8625ACE6B50097AA61 /* Build configuration list for PBXNativeTarget "YinzCam" */;
 			buildPhases = (
+				8FE6B79B0C420458FC81E8E6 /* [CP] Check Pods Manifest.lock */,
 				31EA4B5825ACE6B40097AA61 /* Sources */,
 				31EA4B5925ACE6B40097AA61 /* Frameworks */,
 				31EA4B5A25ACE6B40097AA61 /* Resources */,
+				3F9978ADFC5119A69B4477A5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -247,7 +270,6 @@
 			files = (
 				31EA4B6C25ACE6B50097AA61 /* LaunchScreen.storyboard in Resources */,
 				31EA4B6925ACE6B50097AA61 /* Assets.xcassets in Resources */,
-				31EA4B6725ACE6B40097AA61 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,12 +289,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3F9978ADFC5119A69B4477A5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YinzCam/Pods-YinzCam-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YinzCam/Pods-YinzCam-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YinzCam/Pods-YinzCam-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8FE6B79B0C420458FC81E8E6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YinzCam-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		31EA4B5825ACE6B40097AA61 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				31EA4B6425ACE6B40097AA61 /* ViewController.swift in Sources */,
+				31EA4B6425ACE6B40097AA61 /* SplashView.swift in Sources */,
 				31EA4B6025ACE6B40097AA61 /* AppDelegate.swift in Sources */,
 				31EA4B6225ACE6B40097AA61 /* SceneDelegate.swift in Sources */,
 			);
@@ -310,14 +374,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		31EA4B6525ACE6B40097AA61 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				31EA4B6625ACE6B40097AA61 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		31EA4B6A25ACE6B50097AA61 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -447,6 +503,7 @@
 		};
 		31EA4B8725ACE6B50097AA61 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7AC86A57EE530E65CF23C70 /* Pods-YinzCam.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -466,6 +523,7 @@
 		};
 		31EA4B8825ACE6B50097AA61 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E5C26DC109734759B684701 /* Pods-YinzCam.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
