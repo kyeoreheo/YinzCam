@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		2781FC82C9A89BC3BA7A79A4 /* Pods_YinzCam.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F1D5D993DF733E886F59C92 /* Pods_YinzCam.framework */; };
+		316BC59F25AD012D00A77E55 /* LeagueGothic-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 31EA4B9825ACE75A0097AA61 /* LeagueGothic-Regular.otf */; };
+		316BC5A025AD012D00A77E55 /* Maven Pro Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 31EA4B9625ACE7590097AA61 /* Maven Pro Bold.otf */; };
+		316BC5A125AD012D00A77E55 /* Maven Pro Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 31EA4B9725ACE75A0097AA61 /* Maven Pro Regular.otf */; };
 		31EA4B6025ACE6B40097AA61 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31EA4B5F25ACE6B40097AA61 /* AppDelegate.swift */; };
 		31EA4B6225ACE6B40097AA61 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31EA4B6125ACE6B40097AA61 /* SceneDelegate.swift */; };
 		31EA4B6425ACE6B40097AA61 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31EA4B6325ACE6B40097AA61 /* SplashView.swift */; };
@@ -87,7 +90,6 @@
 			children = (
 				31EA4B5F25ACE6B40097AA61 /* AppDelegate.swift */,
 				31EA4B6125ACE6B40097AA61 /* SceneDelegate.swift */,
-				31EA4B6325ACE6B40097AA61 /* SplashView.swift */,
 				31EA4B6825ACE6B50097AA61 /* Assets.xcassets */,
 				31EA4B6A25ACE6B50097AA61 /* LaunchScreen.storyboard */,
 				31EA4B6D25ACE6B50097AA61 /* Info.plist */,
@@ -112,6 +114,7 @@
 		316BC53E25ACF47400A77E55 /* Splash */ = {
 			isa = PBXGroup;
 			children = (
+				31EA4B6325ACE6B40097AA61 /* SplashView.swift */,
 			);
 			path = Splash;
 			sourceTree = "<group>";
@@ -133,7 +136,6 @@
 		31EA4B5325ACE6B40097AA61 = {
 			isa = PBXGroup;
 			children = (
-				31EA4B9525ACE74D0097AA61 /* Fonts */,
 				31EA4B5E25ACE6B40097AA61 /* YinzCam */,
 				31EA4B7525ACE6B50097AA61 /* YinzCamTests */,
 				31EA4B8025ACE6B50097AA61 /* YinzCamUITests */,
@@ -156,6 +158,7 @@
 		31EA4B5E25ACE6B40097AA61 /* YinzCam */ = {
 			isa = PBXGroup;
 			children = (
+				31EA4B9525ACE74D0097AA61 /* Fonts */,
 				316BC53B25ACF45100A77E55 /* Application */,
 				316BC53C25ACF45A00A77E55 /* Extensions */,
 				316BC53D25ACF46700A77E55 /* API */,
@@ -318,6 +321,9 @@
 			files = (
 				31EA4B6C25ACE6B50097AA61 /* LaunchScreen.storyboard in Resources */,
 				31EA4B6925ACE6B50097AA61 /* Assets.xcassets in Resources */,
+				316BC5A125AD012D00A77E55 /* Maven Pro Regular.otf in Resources */,
+				316BC5A025AD012D00A77E55 /* Maven Pro Bold.otf in Resources */,
+				316BC59F25AD012D00A77E55 /* LeagueGothic-Regular.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
