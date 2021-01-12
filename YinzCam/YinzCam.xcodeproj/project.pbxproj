@@ -26,6 +26,7 @@
 		31BA569625AD2B9500E55FE5 /* SettingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31BA569525AD2B9500E55FE5 /* SettingVC.swift */; };
 		31BA569E25AD311900E55FE5 /* SchedulesCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31BA569D25AD311900E55FE5 /* SchedulesCVC.swift */; };
 		31BA56A325AD323700E55FE5 /* ScheduleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31BA56A225AD323700E55FE5 /* ScheduleCell.swift */; };
+		31BA56A825AD408200E55FE5 /* UIDevice+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31BA56A725AD408200E55FE5 /* UIDevice+.swift */; };
 		31EA4B6025ACE6B40097AA61 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31EA4B5F25ACE6B40097AA61 /* AppDelegate.swift */; };
 		31EA4B6225ACE6B40097AA61 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31EA4B6125ACE6B40097AA61 /* SceneDelegate.swift */; };
 		31EA4B6425ACE6B40097AA61 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31EA4B6325ACE6B40097AA61 /* SplashView.swift */; };
@@ -70,6 +71,7 @@
 		31BA569525AD2B9500E55FE5 /* SettingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingVC.swift; sourceTree = "<group>"; };
 		31BA569D25AD311900E55FE5 /* SchedulesCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchedulesCVC.swift; sourceTree = "<group>"; };
 		31BA56A225AD323700E55FE5 /* ScheduleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleCell.swift; sourceTree = "<group>"; };
+		31BA56A725AD408200E55FE5 /* UIDevice+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIDevice+.swift"; sourceTree = "<group>"; };
 		31EA4B5C25ACE6B40097AA61 /* YinzCam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YinzCam.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		31EA4B5F25ACE6B40097AA61 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		31EA4B6125ACE6B40097AA61 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -137,6 +139,7 @@
 				31BA565E25AD040E00E55FE5 /* UIFont+.swift */,
 				31BA566325AD041500E55FE5 /* String+.swift */,
 				31BA566825AD041B00E55FE5 /* Global.swift */,
+				31BA56A725AD408200E55FE5 /* UIDevice+.swift */,
 				31BA566D25AD042100E55FE5 /* CustomView.swift */,
 			);
 			path = Extensions;
@@ -468,6 +471,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				31BA568425AD2B7700E55FE5 /* HomeVC.swift in Sources */,
+				31BA56A825AD408200E55FE5 /* UIDevice+.swift in Sources */,
 				31BA565F25AD040E00E55FE5 /* UIFont+.swift in Sources */,
 				31BA569E25AD311900E55FE5 /* SchedulesCVC.swift in Sources */,
 				31BA566425AD041500E55FE5 /* String+.swift in Sources */,

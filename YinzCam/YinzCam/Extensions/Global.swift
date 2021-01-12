@@ -10,6 +10,7 @@ import UIKit
 var ratio: CGFloat = 0
 var isBigPhone = false
 var topSafeMargin: CGFloat = 0
+var phoneWidth: CGFloat = 0
 
 enum TextFieldType {
     case phone
@@ -40,6 +41,21 @@ struct Card {
     var number: String
     var cvv: String
 }
+
+func pxToPoint(_ px: CGFloat) -> CGFloat {
+    let ratio = phoneWidth / 320.0
+    return px / 2 * ratio
+//    if UIDevice.modelName == "iPhone 11 Pro Max" ||
+//        UIDevice.modelName == "iPhone 11 Pro" ||
+//        UIDevice.modelName == "iPhone X" ||
+//        UIDevice.modelName == "iPhone XS" ||
+//       UIDevice.modelName == "iPhone XS Max"{
+//        return px / 3
+//    } else {
+//        return px / 2
+//    }
+}
+
 
 
 func removeDuplicates(_ array: [String]) -> [String] {

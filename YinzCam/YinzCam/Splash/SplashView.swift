@@ -63,6 +63,7 @@ class SplashView: UIViewController {
         ratio = heightRatio < 1 ? 1:heightRatio
         isBigPhone = view.frame.height > 750.0
         topSafeMargin = ( UIApplication.shared.windows.first{$0.isKeyWindow}?.safeAreaInsets.top ?? 0) as CGFloat
+        phoneWidth = view.frame.width
     }
 }
 

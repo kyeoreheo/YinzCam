@@ -35,53 +35,53 @@ class ScheduleCell: UICollectionViewCell {
         addSubview(leftTeamLabel)
         leftTeamLabel.text = "BUCCANEERS"
         leftTeamLabel.textAlignment = .left
-        leftTeamLabel.font = .gothicReg(size: 40 * ratio)
+        leftTeamLabel.font = .gothicReg(size: pxToPoint(40))
         leftTeamLabel.snp.makeConstraints { make in
-            make.top.equalToSuperview().offset(28 * ratio)
-            make.left.equalToSuperview().offset(20 * ratio)
-            make.width.equalTo(300 * ratio)
-            make.height.equalTo(44 * ratio)
+            make.top.equalToSuperview().offset(pxToPoint(28))
+            make.left.equalToSuperview().offset(pxToPoint(20))
+            make.width.equalTo(pxToPoint(300))
+            make.height.equalTo(pxToPoint(44))
         }
         
         addSubview(rightTeamLabel)
         rightTeamLabel.text = "JETS"
         rightTeamLabel.textAlignment = .right
-        rightTeamLabel.font = .gothicReg(size: 40 * ratio)
+        rightTeamLabel.font = .gothicReg(size: pxToPoint(40))
         rightTeamLabel.snp.makeConstraints { make in
-            make.top.equalToSuperview().offset(28 * ratio)
-            make.right.equalToSuperview().offset(-20 * ratio)
-            make.width.equalTo(300 * ratio)
-            make.height.equalTo(44 * ratio)
+            make.top.equalToSuperview().offset(pxToPoint(28))
+            make.right.equalToSuperview().offset(pxToPoint(-20))
+            make.width.equalTo(pxToPoint(300))
+            make.height.equalTo(pxToPoint(44))
         }
         
         addSubview(leftScoreLabel)
         leftScoreLabel.text = "17"
         leftScoreLabel.textAlignment = .left
-        leftScoreLabel.font = .gothicReg(size: 60 * ratio)
+        leftScoreLabel.font = .gothicReg(size: pxToPoint(60))
         leftScoreLabel.backgroundColor = .orange
         leftScoreLabel.snp.makeConstraints { make in
-            make.top.equalTo(leftTeamLabel.snp.bottom).offset(12 * ratio)
-            make.left.equalToSuperview().offset(20 * ratio)
-            make.width.equalTo(184 * ratio)
-            make.height.equalTo(72 * ratio)
+            make.top.equalTo(leftTeamLabel.snp.bottom).offset(pxToPoint(12))
+            make.left.equalToSuperview().offset(pxToPoint(20))
+            make.width.equalTo(pxToPoint(184))
+            make.height.equalTo(pxToPoint(72))
         }
         
         addSubview(rightScoreLabel)
         rightScoreLabel.text = "18"
+        rightScoreLabel.backgroundColor = .orange
         rightScoreLabel.textAlignment = .right
-        rightScoreLabel.font = .gothicReg(size: 60 * ratio)
+        rightScoreLabel.font = .gothicReg(size: pxToPoint(60))
         rightScoreLabel.snp.makeConstraints { make in
-            make.top.equalTo(rightTeamLabel.snp.bottom).offset(12 * ratio)
-            make.right.equalToSuperview().offset(-20 * ratio)
-            make.width.equalTo(184 * ratio)
-            make.height.equalTo(72 * ratio)
+            make.top.equalTo(rightTeamLabel.snp.bottom).offset(pxToPoint(12))
+            make.right.equalToSuperview().offset(pxToPoint(-20))
+            make.width.equalTo(pxToPoint(184))
+            make.height.equalTo(pxToPoint(72))
         }
-        
         
         addSubview(leftLogo)
         leftLogo.backgroundColor = .red
         leftLogo.snp.makeConstraints { make in
-            make.width.height.equalTo(80 * ratio)
+            make.width.height.equalTo(pxToPoint(80))
             make.centerY.equalTo(leftScoreLabel)
             make.left.equalTo(leftScoreLabel.snp.right)
         }
@@ -89,9 +89,29 @@ class ScheduleCell: UICollectionViewCell {
         addSubview(rightLogo)
         rightLogo.backgroundColor = .blue
         rightLogo.snp.makeConstraints { make in
-            make.width.height.equalTo(80 * ratio)
+            make.width.height.equalTo(pxToPoint(80))
             make.centerY.equalTo(leftScoreLabel)
             make.right.equalTo(rightScoreLabel.snp.left)
         }
+        
+        addSubview(dateLabel)
+        dateLabel.text = "Sun, Sep 8"
+        dateLabel.font = UIFont.mavenReg(size: pxToPoint(28))
+        dateLabel.snp.makeConstraints { make in
+            make.top.equalTo(rightScoreLabel.snp.bottom).offset(pxToPoint(15))
+            make.left.equalToSuperview().offset(pxToPoint(20))
+            make.height.equalTo(pxToPoint(39))
+            make.width.equalTo(pxToPoint(184))
+        }
+        
+        addSubview(weekLabel)
+        weekLabel.text = "WEEK 1"
+        weekLabel.font = UIFont.mavenReg(size: pxToPoint(28))
+        weekLabel.textColor = .gray0
+        weekLabel.snp.makeConstraints { make in
+            make.centerX.equalToSuperview()
+            make.centerY.equalTo(dateLabel.snp.centerY)
+        }
     }
+    
 }
