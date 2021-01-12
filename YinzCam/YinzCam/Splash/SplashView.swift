@@ -50,7 +50,7 @@ class SplashView: UIViewController {
         }
         
         DispatchQueue.main.async {
-            let navigation = UINavigationController(rootViewController: MainTabBar())
+            let navigation = UINavigationController(rootViewController: HomeVC())
             navigation.modalPresentationStyle = .fullScreen
             navigation.navigationBar.isHidden = true
             self.present(navigation, animated: false, completion: nil)
