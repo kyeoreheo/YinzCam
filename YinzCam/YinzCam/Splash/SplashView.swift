@@ -16,6 +16,11 @@ class SplashView: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         applyGlobalVariables()
+        
+        API.fetchSchedule() { response in
+     
+            
+        }
 
         view.backgroundColor = .orange
         print(view.frame.size)
