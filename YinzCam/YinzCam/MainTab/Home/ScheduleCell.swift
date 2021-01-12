@@ -112,6 +112,19 @@ class ScheduleCell: UICollectionViewCell {
             make.centerX.equalToSuperview()
             make.centerY.equalTo(dateLabel.snp.centerY)
         }
+        
+        addSubview(gameStateLabel)
+        gameStateLabel.text = "FINAL"
+        gameStateLabel.font = UIFont.mavenReg(size: pxToPoint(28))
+        gameStateLabel.textAlignment = .right
+        gameStateLabel.snp.makeConstraints { make in
+            make.right.equalToSuperview().offset(pxToPoint(-20))
+            make.centerY.equalTo(dateLabel.snp.centerY)
+        }
+    }
+    
+    public func applyData() {
+        
     }
     
 }
