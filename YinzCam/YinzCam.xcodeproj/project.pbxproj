@@ -35,6 +35,7 @@
 		31EA4B6C25ACE6B50097AA61 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31EA4B6A25ACE6B50097AA61 /* LaunchScreen.storyboard */; };
 		31EA4B7725ACE6B50097AA61 /* YinzCamTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31EA4B7625ACE6B50097AA61 /* YinzCamTests.swift */; };
 		31EA4B8225ACE6B50097AA61 /* YinzCamUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31EA4B8125ACE6B50097AA61 /* YinzCamUITests.swift */; };
+		31EB2BDA25B28497001DA6F9 /* schedule.json in Resources */ = {isa = PBXBuildFile; fileRef = 31EB2BD925B28497001DA6F9 /* schedule.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +91,7 @@
 		31EA4B9625ACE7590097AA61 /* Maven Pro Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Maven Pro Bold.otf"; sourceTree = "<group>"; };
 		31EA4B9725ACE75A0097AA61 /* Maven Pro Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Maven Pro Regular.otf"; sourceTree = "<group>"; };
 		31EA4B9825ACE75A0097AA61 /* LeagueGothic-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LeagueGothic-Regular.otf"; sourceTree = "<group>"; };
+		31EB2BD925B28497001DA6F9 /* schedule.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = schedule.json; sourceTree = "<group>"; };
 		F7AC86A57EE530E65CF23C70 /* Pods-YinzCam.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YinzCam.debug.xcconfig"; path = "Target Support Files/Pods-YinzCam/Pods-YinzCam.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -151,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				3178796B25AD87B200131DF0 /* API.swift */,
+				31EB2BD925B28497001DA6F9 /* schedule.json */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -404,6 +407,7 @@
 			files = (
 				31EA4B6C25ACE6B50097AA61 /* LaunchScreen.storyboard in Resources */,
 				31EA4B6925ACE6B50097AA61 /* Assets.xcassets in Resources */,
+				31EB2BDA25B28497001DA6F9 /* schedule.json in Resources */,
 				316BC5A125AD012D00A77E55 /* Maven Pro Regular.otf in Resources */,
 				316BC5A025AD012D00A77E55 /* Maven Pro Bold.otf in Resources */,
 				316BC59F25AD012D00A77E55 /* LeagueGothic-Regular.otf in Resources */,
