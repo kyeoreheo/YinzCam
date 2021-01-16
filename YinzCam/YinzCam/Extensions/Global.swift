@@ -45,18 +45,59 @@ struct Card {
 func pxToPoint(_ px: CGFloat) -> CGFloat {
     let ratio = phoneWidth / 320.0
     return px / 2 * ratio
-//    if UIDevice.modelName == "iPhone 11 Pro Max" ||
-//        UIDevice.modelName == "iPhone 11 Pro" ||
-//        UIDevice.modelName == "iPhone X" ||
-//        UIDevice.modelName == "iPhone XS" ||
-//       UIDevice.modelName == "iPhone XS Max"{
-//        return px / 3
-//    } else {
-//        return px / 2
-//    }
 }
 
+func weekday(of num: Int) -> String {
+    switch num {
+        case 1:
+            return "Sun"
+        case 2:
+            return "Mon"
+        case 3:
+            return "Tue"
+        case 4:
+            return "Wed"
+        case 5:
+            return "Thu"
+        case 6:
+            return "Fri"
+        case 7:
+            return "Sat"
+        default:
+            return ""
+    }
+}
 
+func triMonth(of month: Int) -> String {
+    switch month {
+        case 1:
+            return "Jan"
+        case 2:
+            return "Feb"
+        case 3:
+            return "Mar"
+        case 4:
+            return "Apr"
+        case 5:
+            return "May"
+        case 6:
+            return "Jun"
+        case 7:
+            return "Jul"
+        case 8:
+            return "Aug"
+        case 9:
+            return "Sep"
+        case 10:
+            return "Oct"
+        case 11:
+            return "Nov"
+        case 12:
+            return "Dec"
+        default:
+            return ""
+    }
+}
 
 func removeDuplicates(_ array: [String]) -> [String] {
     var result = [String]()

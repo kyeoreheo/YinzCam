@@ -33,7 +33,7 @@ class ScheduleCell: UICollectionViewCell {
     private func configureUI() {
         backgroundColor = .white
         addSubview(leftTeamLabel)
-        leftTeamLabel.text = "BUCCANEERS"
+        leftTeamLabel.text = "-"
         leftTeamLabel.textAlignment = .left
         leftTeamLabel.font = .gothicReg(size: pxToPoint(40))
         leftTeamLabel.snp.makeConstraints { make in
@@ -44,7 +44,7 @@ class ScheduleCell: UICollectionViewCell {
         }
         
         addSubview(rightTeamLabel)
-        rightTeamLabel.text = "JETS"
+        rightTeamLabel.text = "-"
         rightTeamLabel.textAlignment = .right
         rightTeamLabel.font = .gothicReg(size: pxToPoint(40))
         rightTeamLabel.snp.makeConstraints { make in
@@ -55,7 +55,7 @@ class ScheduleCell: UICollectionViewCell {
         }
         
         addSubview(leftScoreLabel)
-        leftScoreLabel.text = "17"
+        leftScoreLabel.text = "0"
         leftScoreLabel.textAlignment = .left
         leftScoreLabel.font = .gothicReg(size: pxToPoint(60))
         leftScoreLabel.backgroundColor = .orange
@@ -67,7 +67,7 @@ class ScheduleCell: UICollectionViewCell {
         }
         
         addSubview(rightScoreLabel)
-        rightScoreLabel.text = "18"
+        rightScoreLabel.text = "0"
         rightScoreLabel.backgroundColor = .orange
         rightScoreLabel.textAlignment = .right
         rightScoreLabel.font = .gothicReg(size: pxToPoint(60))
@@ -95,7 +95,7 @@ class ScheduleCell: UICollectionViewCell {
         }
         
         addSubview(dateLabel)
-        dateLabel.text = "Sun, Sep 8"
+        dateLabel.text = "-"
         dateLabel.font = UIFont.mavenReg(size: pxToPoint(28))
         dateLabel.snp.makeConstraints { make in
             make.top.equalTo(rightScoreLabel.snp.bottom).offset(pxToPoint(15))
@@ -105,7 +105,7 @@ class ScheduleCell: UICollectionViewCell {
         }
         
         addSubview(weekLabel)
-        weekLabel.text = "WEEK 1"
+        weekLabel.text = "WEEK -"
         weekLabel.font = UIFont.mavenReg(size: pxToPoint(28))
         weekLabel.textColor = .gray0
         weekLabel.snp.makeConstraints { make in
@@ -114,7 +114,7 @@ class ScheduleCell: UICollectionViewCell {
         }
         
         addSubview(gameStateLabel)
-        gameStateLabel.text = "FINAL"
+        gameStateLabel.text = "-"
         gameStateLabel.font = UIFont.mavenReg(size: pxToPoint(28))
         gameStateLabel.textAlignment = .right
         gameStateLabel.snp.makeConstraints { make in
@@ -123,8 +123,40 @@ class ScheduleCell: UICollectionViewCell {
         }
     }
     
-    public func applyData() {
+    public func applyData(teamInfo: API.Team?, game: API.Game?) {
+        guard let teamInfo = teamInfo,
+              let opponent = game?.opponent,
+              let record = opponent.record,
+              let date = game?.date?.numeric,
+              let week = game?.week
+        else { return }
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd"
+        if let tempDate = dateFormatter.date(from: date) {
+            let weekDay = Calendar.current.component(.weekday, from: tempDate)
+            let month = Calendar.current.component(.month, from: tempDate)
+            let day = Calendar.current.component(.day, from: tempDate)
+            dateLabel.text = weekday(of: weekDay) + ", " + triMonth(of: month) + " " + String(day)
+        }
         
+//        private let leftTeamLabel = UILabel()
+//        private let leftScoreLabel = UILabel()
+//        private let leftLogo = UIImageView()
+//
+//        private let rightTeamLabel = UILabel()
+//        private let rightScoreLabel = UILabel()
+//        private let rightLogo = UIImageView()
+//
+//        private let middlePoint = UILabel()
+//        private let dateLabel = UILabel()
+//        private let weekLabel = UILabel()
+//        private let gameStateLabel = UILabel()
+        leftTeamLabel.text = teamInfo.name
+        rightTeamLabel.text = opponent.name
+        leftScoreLabel.text = record.stringBefore("-")
+        rightScoreLabel.text = record.stringAfter("-")
+//        dateLabel.text =
+        weekLabel.text = week
     }
     
 }

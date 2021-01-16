@@ -14,7 +14,14 @@ protocol SchedulesCVCDelegate: class {
 class SchedulesCVC: UICollectionViewController {
     private let reuseIdentifier = "scheduleCell"
     private var schedules = ""
+    
     public var delegate: SchedulesCVCDelegate?
+    public var teamInfo: API.Team?
+    public var gameSection = [API.GameSection]() {
+        didSet {
+            collectionView.reloadData()
+        }
+    }
     
     override init(collectionViewLayout layout: UICollectionViewLayout = UICollectionViewLayout()) {
         let myLayout = UICollectionViewFlowLayout()
@@ -42,18 +49,27 @@ class SchedulesCVC: UICollectionViewController {
 }
 
 extension SchedulesCVC: UICollectionViewDelegateFlowLayout {
+    override func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return gameSection.count
+    }
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let width = view.frame.width
         return CGSize(width: width, height: 156 * ratio)
     }
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
+        if(gameSection.count > 0) {
+            return gameSection[section].games?.count ?? 0
+        } else {
+            return 5
+        }
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! ScheduleCell
         //cell.receipt = receipts[indexPath.row]
+        cell.applyData(teamInfo: teamInfo, game: gameSection[indexPath.section].games?[indexPath.row])
         return cell
     }
     
