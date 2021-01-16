@@ -11,6 +11,7 @@
 		316BC59F25AD012D00A77E55 /* LeagueGothic-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 31EA4B9825ACE75A0097AA61 /* LeagueGothic-Regular.otf */; };
 		316BC5A025AD012D00A77E55 /* Maven Pro Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 31EA4B9625ACE7590097AA61 /* Maven Pro Bold.otf */; };
 		316BC5A125AD012D00A77E55 /* Maven Pro Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 31EA4B9725ACE75A0097AA61 /* Maven Pro Regular.otf */; };
+		3178796C25AD87B200131DF0 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3178796B25AD87B200131DF0 /* API.swift */; };
 		31BA564B25AD03E400E55FE5 /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31BA564A25AD03E400E55FE5 /* UIColor+.swift */; };
 		31BA565025AD03F800E55FE5 /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31BA564F25AD03F800E55FE5 /* UIViewController+.swift */; };
 		31BA565525AD040100E55FE5 /* UILabel+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31BA565425AD040100E55FE5 /* UILabel+.swift */; };
@@ -34,6 +35,7 @@
 		31EA4B6C25ACE6B50097AA61 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31EA4B6A25ACE6B50097AA61 /* LaunchScreen.storyboard */; };
 		31EA4B7725ACE6B50097AA61 /* YinzCamTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31EA4B7625ACE6B50097AA61 /* YinzCamTests.swift */; };
 		31EA4B8225ACE6B50097AA61 /* YinzCamUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31EA4B8125ACE6B50097AA61 /* YinzCamUITests.swift */; };
+		31EB2BDA25B28497001DA6F9 /* schedule.json in Resources */ = {isa = PBXBuildFile; fileRef = 31EB2BD925B28497001DA6F9 /* schedule.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,7 @@
 /* Begin PBXFileReference section */
 		0E5C26DC109734759B684701 /* Pods-YinzCam.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YinzCam.release.xcconfig"; path = "Target Support Files/Pods-YinzCam/Pods-YinzCam.release.xcconfig"; sourceTree = "<group>"; };
 		2F1D5D993DF733E886F59C92 /* Pods_YinzCam.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YinzCam.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3178796B25AD87B200131DF0 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		31BA564A25AD03E400E55FE5 /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
 		31BA564F25AD03F800E55FE5 /* UIViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+.swift"; sourceTree = "<group>"; };
 		31BA565425AD040100E55FE5 /* UILabel+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+.swift"; sourceTree = "<group>"; };
@@ -88,6 +91,7 @@
 		31EA4B9625ACE7590097AA61 /* Maven Pro Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Maven Pro Bold.otf"; sourceTree = "<group>"; };
 		31EA4B9725ACE75A0097AA61 /* Maven Pro Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Maven Pro Regular.otf"; sourceTree = "<group>"; };
 		31EA4B9825ACE75A0097AA61 /* LeagueGothic-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LeagueGothic-Regular.otf"; sourceTree = "<group>"; };
+		31EB2BD925B28497001DA6F9 /* schedule.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = schedule.json; sourceTree = "<group>"; };
 		F7AC86A57EE530E65CF23C70 /* Pods-YinzCam.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YinzCam.debug.xcconfig"; path = "Target Support Files/Pods-YinzCam/Pods-YinzCam.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -148,6 +152,8 @@
 		316BC53D25ACF46700A77E55 /* API */ = {
 			isa = PBXGroup;
 			children = (
+				3178796B25AD87B200131DF0 /* API.swift */,
+				31EB2BD925B28497001DA6F9 /* schedule.json */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -401,6 +407,7 @@
 			files = (
 				31EA4B6C25ACE6B50097AA61 /* LaunchScreen.storyboard in Resources */,
 				31EA4B6925ACE6B50097AA61 /* Assets.xcassets in Resources */,
+				31EB2BDA25B28497001DA6F9 /* schedule.json in Resources */,
 				316BC5A125AD012D00A77E55 /* Maven Pro Regular.otf in Resources */,
 				316BC5A025AD012D00A77E55 /* Maven Pro Bold.otf in Resources */,
 				316BC59F25AD012D00A77E55 /* LeagueGothic-Regular.otf in Resources */,
@@ -484,6 +491,7 @@
 				31BA564B25AD03E400E55FE5 /* UIColor+.swift in Sources */,
 				31BA569625AD2B9500E55FE5 /* SettingVC.swift in Sources */,
 				31BA566E25AD042100E55FE5 /* CustomView.swift in Sources */,
+				3178796C25AD87B200131DF0 /* API.swift in Sources */,
 				31BA565025AD03F800E55FE5 /* UIViewController+.swift in Sources */,
 				31EA4B6025ACE6B40097AA61 /* AppDelegate.swift in Sources */,
 				31BA566925AD041B00E55FE5 /* Global.swift in Sources */,

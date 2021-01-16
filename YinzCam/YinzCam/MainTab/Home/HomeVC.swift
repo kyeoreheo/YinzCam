@@ -31,6 +31,11 @@ class HomeVC: UIViewController {
             make.bottom.equalTo(view.safeAreaLayoutGuide.snp.bottom)
         }
         
+        API.fetchLocalSchedule { response in
+            
+            
+        }
+        
     }
     
 }
