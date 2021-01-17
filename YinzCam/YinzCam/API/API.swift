@@ -218,4 +218,8 @@ class API {
             }
         }
     }
+    
+    static func logoImageURL(of code: String) -> URL? {
+        return URL(string: "http://yc-app-resources.s3.amazonaws.com/nfl/logos/nfl_\(code.lowercased())_light.png")
+    }
 }
