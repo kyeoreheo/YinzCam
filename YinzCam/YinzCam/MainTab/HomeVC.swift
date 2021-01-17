@@ -16,6 +16,7 @@ class HomeVC: UIViewController {
         }
     }
     private let navBar = UIView()
+    private let navTitle = UILabel()
     private let hamburgerMenu = UIImageView()
     private let schedulesCVC = SchedulesCVC()
     
@@ -26,7 +27,7 @@ class HomeVC: UIViewController {
     }
     
     private func configure() {
-        view.backgroundColor = .red
+        view.backgroundColor = .white
         schedulesCVC.delegate = self
     }
     
@@ -35,10 +36,20 @@ class HomeVC: UIViewController {
         else { return }
         
         view.addSubview(navBar)
+        view.addSubview(navTitle)
+
         navBar.backgroundColor = .blue
         navBar.snp.makeConstraints { make in
             make.top.left.right.equalToSuperview()
-            make.height.equalTo(50)
+            make.bottom.equalTo(navTitle.snp.bottom)
+        }
+        
+        navTitle.text = "SCHEDULE"
+        navTitle.font = .gothicReg(size: pxToPoint(70))
+        navTitle.textColor = .white
+        navTitle.snp.makeConstraints { make in
+            make.top.equalTo(view.safeAreaLayoutGuide.snp.top)
+            make.centerX.equalToSuperview()
         }
         
         view.addSubview(schedulesCVC)
@@ -56,7 +67,6 @@ class HomeVC: UIViewController {
                   let teamInfo = response?.team,
                   let gameSection = response?.gameSections
             else { return }
-            //strongSelf.gameList = response
             strongSelf.schedulesCVC.teamInfo = teamInfo
             strongSelf.schedulesCVC.gameSection = gameSection
         }
