@@ -45,8 +45,6 @@ class SchedulesCVC: UICollectionViewController {
         collectionView.showsHorizontalScrollIndicator = false
         collectionView.register(ScheduleCell.self, forCellWithReuseIdentifier: reuseIdentifier)
         collectionView.register(SectionHeader.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: reuseHeaderIdentifier)
-//        collectionView.register(UINib(nibName: HCollectionReusableView.nibName, bundle: nil), forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: HCollectionReusableView.reuseIdentifier)
-
     }
 }
 
@@ -59,7 +57,7 @@ extension SchedulesCVC: UICollectionViewDelegateFlowLayout {
              let sectionHeader = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: reuseHeaderIdentifier, for: indexPath) as! SectionHeader
              sectionHeader.label.text = headerText
              return sectionHeader
-        } else { //No footer in this case but can add option for that
+        } else {
              return UICollectionReusableView()
         }
     }

@@ -78,4 +78,5 @@ extension HomeVC: SchedulesCVCDelegate {
     func cellTapped(index: Int) {
         print("DEBUG:- \(index)")
     }
+    
 }
