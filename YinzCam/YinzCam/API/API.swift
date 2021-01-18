@@ -85,12 +85,10 @@ class API {
         let isHome: Bool?
         let schedulHeader: String?
         let isSuperStadium: Bool?
-//////        let cardData:
         let date: DateResponse?
         let opponent: Opponent?
         let tickets: Ticket?
         let result: String?
-//        let buttons = "Buttons"
         
         enum CodingKeys: String, CodingKey {
             case id = "Id"
@@ -111,12 +109,10 @@ class API {
             case isHome = "IsHome"
             case schedulHeader = "ScheduleHeader"
             case isSuperStadium = "IsSuperStadium"
-////            case cardData = "CardData"
             case date = "Date"
             case opponent = "Opponent"
             case tickets = "Tickets"
             case result = "Result"
-//            case buttons = "Buttons"
         }
     }
     

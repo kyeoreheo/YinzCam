@@ -10,45 +10,28 @@ import SnapKit
 
 class SplashView: UIViewController {
     private let label = UILabel()
-    private let label2 = UILabel()
-    private let label3 = UILabel()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         applyGlobalVariables()
-
+        configureUI()
+        presentHomeVC()
+    }
+    
+    private func configureUI() {
         view.backgroundColor = .orange
-        print(view.frame.size)
         
         view.addSubview(label)
-        label.text = "I love iOS coding <3"
+        label.text = "YinCam Tech Challenge"
         label.textColor = .white
         label.font = .gothicReg(size: 12)
         label.snp.makeConstraints { make in
             make.height.equalTo(50)
             make.center.equalToSuperview()
         }
-        
-        view.addSubview(label2)
-        label2.text = "I love iOS coding <3"
-        label2.textColor = .white
-        label2.font = .mavenReg(size: 12)
-        label2.snp.makeConstraints { make in
-            make.height.equalTo(50)
-            make.top.equalTo(label.snp.bottom).offset(8)
-            make.centerX.equalToSuperview()
-        }
-
-        view.addSubview(label3)
-        label3.text = "I love iOS coding <3"
-        label3.textColor = .white
-        label3.font = .mavenBold(size: 12)
-        label3.snp.makeConstraints { make in
-            make.height.equalTo(50)
-            make.top.equalTo(label2.snp.bottom).offset(8)
-            make.centerX.equalToSuperview()
-        }
-        
+    }
+    
+    private func presentHomeVC() {
         DispatchQueue.main.async {
             let navigation = UINavigationController(rootViewController: HomeVC())
             navigation.modalPresentationStyle = .fullScreen
@@ -66,4 +49,3 @@ class SplashView: UIViewController {
         phoneWidth = view.frame.width
     }
 }
-
